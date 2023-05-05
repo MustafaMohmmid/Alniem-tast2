@@ -172,7 +172,7 @@ ul {
 }
 @media (max-width: 767px) {   
     .nav ul li a {
-    font-size: 1px;
+    font-size: 12px;
     padding: 12px 3px;
     }
 }    
