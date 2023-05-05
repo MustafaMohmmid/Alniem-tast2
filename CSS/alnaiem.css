@@ -132,14 +132,14 @@ ul {
 }
 @media (max-width: 767px) {   
     .head .container .social .so {
-       margin: 10px;
+       margin: 4px;
     }
 }   
 .head .container .social i {
     padding: 0 20px;
     display: table-cell;
 }
-header {
+.nav {
     /* position: absolute;
     right: 0;
     width: 100%;
@@ -149,30 +149,35 @@ header {
     -webkit-box-shadow: 0 0 10px #ddd;
     -moz-box-shadow: 0 0 10px #ddd;
     box-shadow: 0 0 10px #ddd;
+    bottom: 6px;
+    position: relative;
 }
-header .container {    
+.nav .container {    
     /* display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
     min-height: 150px;
     background: #ac6d36; */
-    align-items: center;
-    width: auto;
-    line-height: 3;
+    display: inline;
 }
-header .menu {
+@media (max-width: 767px) {
+    .nav .container {
+        display: block;
+    }
+}
+.nav .menu {
     display: flex;
     justify-content: space-evenly;
 }
 @media (max-width: 767px) {   
-    header nav ul li a {
+    .nav ul li a {
     font-size: 1px;
     padding: 12px 3px;
     }
 }    
 
-/* header .container::after {
+/* .nav .container::after {
     content: '';
     position: absolute;
     height: 1px;
@@ -182,58 +187,45 @@ header .menu {
     width: calc(100% - 30px);
     right: 15px;
 } */
-header .container .logo {
+.nav .container .logo {
     /* font-size: 40px;
     color: var(--main-color);
     display: flex;
     flex-wrap: wrap; */
 
 }
-header .logo img {
+.nav .logo img {
     /* font-size: 20px;
     width: 300px;
     height: 239px;
     position: absolute;  */
 }
-header nav {
-    /* flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end; */
-    min-height: 50px;
-}
-@media (max-width: 767px) {   
-    header nav {
-        /* display: flex;
-        justify-content: flex-end; */
-    }
-}    
-/* header nav .toggle-menu {
+/* .nav nav .toggle-menu {
     color: white;
     font-size: 22px;
     direction: rtl;
 
 } */
 /* @media (min-width: 768px) {    mobil frist-sc mobil
-    header nav .toggle-menu {
+    .nav nav .toggle-menu {
         display: none;
     }
 } */
-/* /* header nav ul {
+/* /* .nav nav ul {
     display: flex;
 } */
-@media (max-width: 767px) {
-    header nav ul {
+/* @media (max-width: 767px) {
+    .nav ul {
         display: none;
     }
-}
+} */
 @media (max-width: 767px) {
-    header nav ul .pho {
+    .nav ul .pho {
         display: none;
     }
 }
 
-/* header nav .toggle-menu:hover + ul {
+/* .nav nav .toggle-menu:hover + ul {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -244,14 +236,14 @@ header nav {
     background-color: rgb(83 23 16 / 88%);
     z-index: 23;
 } */
-/* header nav .toggle-menu:hover + ul li a {
+/* .nav nav .toggle-menu:hover + ul li a {
         padding: 15px;
 } */
     OR 
-header nav ul li a {
+.nav  ul li a {
     padding: 15px !important;
 } 
-header nav ul li a {
+.nav ul li a {
     display: flex;
     color: white;
     /* text-decoration: none; */
@@ -263,26 +255,26 @@ header nav ul li a {
     padding: 17px 15px; */
     text-align: center;
 }
-header nav ul li a.active,
-header nav ul li a:hover {
+.nav ul li a.active,
+.nav ul li a:hover {
   color: ;
   z-index: 1000000;
 }
-/* header nav .form {
+/* .nav .form {
     width: 40px;
     height: 30px;
     position: relative;
     margin-right: 30px;
     border-right: 1px solid white;
 }
-header nav .form i {
+.nav .form i {
     color: white;
     position: absolute;
     font-size: 20px;
     transform: translateY(50%);
     left: 0;
 }
-header .menu__bar { 
+.nav .menu__bar { 
     display: flex;
     height: 102px;
     width: 100%;
@@ -290,11 +282,11 @@ header .menu__bar {
     justify-content: space-between;
 }
 @media (max-width: 992px){
-    header .menu__bar {
+    .nav .menu__bar {
         overflow: hidden;
     }
 }
-header .logo  {
+.nav .logo  {
     height: 50px;
      margin-right: 40px; 
      display: flex;
@@ -302,18 +294,18 @@ header .logo  {
     align-items: center; 
 } 
 
-header .menu__bar li {
+.nav .menu__bar li {
     position: relative;
 }
-header .menu__bar li i {
+.nav .menu__bar li i {
     padding-right: 5px;
 }
 @media (max-width: 767px) {
-    header .menu__bar li i {
+    .nav .menu__bar li i {
       display: none;
     }
 } 
-header .menu__bar li a {
+.nav .menu__bar li a {
     color: #fff;
 }
 .menu__bar li a:hover {
@@ -363,7 +355,7 @@ header .menu__bar li a {
 }  */
 
 @media (max-width: 767px) {
-    .header .logo {
+    ..nav .logo {
         width: 100%;
         height: 50px;
         margin: auto;
@@ -425,9 +417,9 @@ background: var(--main-color)
     color: #f1dbef;
     cursor: pointer;
     position: absolute;
-    top: 65%;
+    top: 50%;
     width: auto;
-    padding: 10px;
+    padding: 0px 10px;
     margin-top: 0px;
     font-weight: bold;
     font-size: 30px;
