@@ -227,6 +227,12 @@ header nav {
         display: none;
     }
 }
+@media (max-width: 767px) {
+    header nav ul .pho {
+        display: none;
+    }
+}
+
 /* header nav .toggle-menu:hover + ul {
     display: flex;
     flex-direction: column;
@@ -256,7 +262,7 @@ header nav ul li a {
     font-size: 17px;
     padding: 17px 15px; */
     text-align: center;
-  }
+}
 header nav ul li a.active,
 header nav ul li a:hover {
   color: ;
