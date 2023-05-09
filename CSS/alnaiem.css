@@ -425,7 +425,7 @@ article:before {
 } 
 @media (max-width: 767px) {
     .to-banner {
-        max-height: 100px;
+        max-height: 143px;
     }
 } 
 .slideshow {
