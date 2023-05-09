@@ -21,7 +21,7 @@ html {
 }
 body {
     font-family: 'Cairo', sans-serif;
-    background: #e57200;
+    background: #fed45e;
 }
 a {
     text-decoration: none;
@@ -99,9 +99,7 @@ ul {
  /* End components */
 /* Start Header  */
 .head {
-    width: 100%;
-    background: rgb(83 23 16 / 91%);
-    height: 100%;
+    background: #ffedbb;
 }
 .head .container {
     display: flex;
@@ -116,23 +114,39 @@ ul {
 .head .container .logo .logo-link {
     background: url(../imegs/non-background/logo.png) top center no-repeat;
     background-size: 100%;
-    width: 200px;
-    height: 125px;
+    width: 222px;
+    height: 157px;
     /* position: relative; */
     /* position: relative; */
-    display: inline-block;
+    display: block;
 }
+@media (max-width: 767px) {   
+    .head .container .logo .logo-link {
+        max-height: 87px;
+        max-width: 129px;
+    }
+}    
 .head .container .social .so {
     display: flex;
 }
 .head .container .social .so a {
-    font-size: 30px;
+    font-size: 40px;
     text-align: center;
-    color: #f0d1a1;
+    color: #830d0d;
+    position: relative;
+    top: 15px;
+    right: 100px;
 }
 @media (max-width: 767px) {   
     .head .container .social .so {
        margin: 4px;
+    }
+}   
+@media (max-width: 767px) {   
+    .head .container .social .so a {
+        right: 0;
+        top: 0;
+        font-size: x-large;
     }
 }   
 .head .container .social i {
@@ -145,7 +159,7 @@ ul {
     width: 100%;
     z-index: 1000;
     background-color: #ac6d36; */
-    background: #ac6d36; 
+    background: #B96B00; 
     -webkit-box-shadow: 0 0 10px #ddd;
     -moz-box-shadow: 0 0 10px #ddd;
     box-shadow: 0 0 10px #ddd;
@@ -200,32 +214,34 @@ ul {
     height: 239px;
     position: absolute;  */
 }
-/* .nav nav .toggle-menu {
-    color: white;
-    font-size: 22px;
-    direction: rtl;
-
-} */
-/* @media (min-width: 768px) {    mobil frist-sc mobil
+/* 
     .nav nav .toggle-menu {
-        display: none;
-    }
-} */
-/* /* .nav nav ul {
-    display: flex;
-} */
-/* @media (max-width: 767px) {
-    .nav ul {
-        display: none;
-    }
-} */
+        color: white;
+        font-size: 22px;
+        direction: rtl;
+
+    } 
+     @media (min-width: 768px) {    mobil frist-sc mobil
+        .nav nav .toggle-menu {
+            display: none;
+        }
+    } 
+    .nav nav ul {
+        display: flex;
+    } 
+     @media (max-width: 767px) {
+        .nav ul {
+            display: none;
+        }
+}*/
 @media (max-width: 767px) {
     .nav ul .pho {
         display: none;
     }
 }
 
-/* .nav nav .toggle-menu:hover + ul {
+/* 
+    .nav nav .toggle-menu:hover + ul {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -235,8 +251,8 @@ ul {
     height: 70px;
     background-color: rgb(83 23 16 / 88%);
     z-index: 23;
-} */
-/* .nav nav .toggle-menu:hover + ul li a {
+    } 
+    .nav nav .toggle-menu:hover + ul li a {
         padding: 15px;
 } */
     OR 
@@ -260,99 +276,101 @@ ul {
   color: ;
   z-index: 1000000;
 }
-/* .nav .form {
-    width: 40px;
-    height: 30px;
-    position: relative;
-    margin-right: 30px;
-    border-right: 1px solid white;
-}
-.nav .form i {
-    color: white;
-    position: absolute;
-    font-size: 20px;
-    transform: translateY(50%);
-    left: 0;
-}
-.nav .menu__bar { 
-    display: flex;
-    height: 102px;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
-}
-@media (max-width: 992px){
-    .nav .menu__bar {
-        overflow: hidden;
+/*
+    .nav .form {
+        width: 40px;
+        height: 30px;
+        position: relative;
+        margin-right: 30px;
+        border-right: 1px solid white;
     }
-}
-.nav .logo  {
-    height: 50px;
-     margin-right: 40px; 
-     display: flex;
-    justify-content: center;
-    align-items: center; 
-} 
+    .nav .form i {
+        color: white;
+        position: absolute;
+        font-size: 20px;
+        transform: translateY(50%);
+        left: 0;
+    }
+    .nav .menu__bar { 
+        display: flex;
+        height: 102px;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+    }
+    @media (max-width: 992px){
+        .nav .menu__bar {
+            overflow: hidden;
+        }
+    }
+    .nav .logo  {
+        height: 50px;
+         margin-right: 40px; 
+         display: flex;
+        justify-content: center;
+        align-items: center; 
+    } 
 
-.nav .menu__bar li {
-    position: relative;
-}
-.nav .menu__bar li i {
-    padding-right: 5px;
-}
-@media (max-width: 767px) {
-    .nav .menu__bar li i {
-      display: none;
+    .nav .menu__bar li {
+        position: relative;
     }
-} 
-.nav .menu__bar li a {
-    color: #fff;
-}
-.menu__bar li a:hover {
-    color: #f2aa53;
-}
-.dropdowm__menu {
-    display: none;
-}
-.menu__bar li:hover .dropdowm__menu {
-    display: block;
-    direction: initial;
-    position: absolute;
-    z-index: 1000;
-    color: #fff;
-    right: 0;
-    top: 100%;
-    background: rgb(83 23 16 / 98%);
-}
-.menu__bar li:hover .dropdowm__menu ul {
-    display: block;
-    margin: 0px 0 40px;
-    padding: 0px;
-    text-align: center;
-}
-.menu__bar li:hover .dropdowm__menu ul li {
-    width: 115px;
-    height: 80px;
-    padding: 10px;
-}
-.dropdowm__menu ul li a .fas {
-    float: left;
-    margin-left: -15px;
-    padding: 6px;
-} */
-/* .dropdowm__menu-1 {
-    display:none
-} 
-.dropdowm__menu ul li:hover .dropdowm__menu-1 {
-    display: block;
-    direction: initial;
-    position: absolute;
-    z-index: 1000;
-    color: #fff;
-    right:100%;
-    top: 0;
-    background: var(--main-color);
-}  */
+    .nav .menu__bar li i {
+        padding-right: 5px;
+    }
+    @media (max-width: 767px) {
+        .nav .menu__bar li i {
+          display: none;
+        }
+    } 
+    .nav .menu__bar li a {
+        color: #fff;
+    }
+    .menu__bar li a:hover {
+        color: #f2aa53;
+    }
+    .dropdowm__menu {
+        display: none;
+    }
+    .menu__bar li:hover .dropdowm__menu {
+        display: block;
+        direction: initial;
+        position: absolute;
+        z-index: 1000;
+        color: #fff;
+        right: 0;
+        top: 100%;
+        background: rgb(83 23 16 / 98%);
+    }
+    .menu__bar li:hover .dropdowm__menu ul {
+        display: block;
+        margin: 0px 0 40px;
+        padding: 0px;
+        text-align: center;
+    }
+    .menu__bar li:hover .dropdowm__menu ul li {
+        width: 115px;
+        height: 80px;
+        padding: 10px;
+    }
+    .dropdowm__menu ul li a .fas {
+        float: left;
+        margin-left: -15px;
+        padding: 6px;
+    } 
+     .dropdowm__menu-1 {
+        display:none
+    } 
+    .dropdowm__menu ul li:hover .dropdowm__menu-1 {
+        display: block;
+        direction: initial;
+        position: absolute;
+        z-index: 1000;
+        color: #fff;
+        right:100%;
+        top: 0;
+        background: var(--main-color);
+    }
+*/
 
 @media (max-width: 767px) {
     ..nav .logo {
@@ -371,7 +389,7 @@ article {
 article:before {
     background-repeat: repeat-x;
     content: "";
-    display: block;
+    display: none;
     height: 10px;
     right: 0;
     margin-top: 10px;
@@ -387,16 +405,34 @@ article:before {
     padding: 10px;
 }
 .to-banner {
-    max-height: 550px;
-    height: 350px;
+    /* max-height: 550px; */
+    height: 679px;
     width: 100%;
     position: relative;
+    background: url(../imegs/bannr.jpg)no-repeat;
+    background-position: center;
+    background-size: cover;
 }
+@media (max-width: 2230px) {
+    .to-banner {
+        max-height: 550px;
+    }
+} 
+@media (max-width: 992px) {
+    .to-banner {
+        max-height: 250px;
+    }
+} 
+@media (max-width: 767px) {
+    .to-banner {
+        max-height: 100px;
+    }
+} 
 .slideshow {
     width: 100%;
     height: 100%;
     padding: 14px 50px 0;
-background: var(--main-color)
+    background: var(--main-color);
 }
 
 .slideshow-container {
@@ -527,6 +563,7 @@ background: var(--main-color)
  /* Start Section  */
 Section {
     padding: 60px 0;
+    background: #b96b00;
 }
 .services {
     position: relative;
@@ -539,7 +576,7 @@ Section {
     height: 10px;
     right: 0;
     position: absolute;
-    top: 4px;
+    top: 0px;
     width: 100%;
     z-index: 99;
     background: url(../imegs/insta/160X16.png)
