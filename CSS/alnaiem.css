@@ -871,3 +871,472 @@ hr {
     }
 }
  /* End Footer */
+/* Start Buffet Pag  */
+.wrapper {
+    /* background: rgb(185 107 33); */
+    max-height: 110px;
+    padding: 0 48px;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+@media (max-width: 992px) {
+    .wrapper  {
+        padding: 0;
+    }
+}
+.wrapper .section {
+    display: flex;
+    justify-content: space-between;
+}
+.wrapper .section .top_navbar {
+    background: rgb(255 237 187);
+    height: 108px;
+    display: flex;
+    align-items: center;
+    width: 137px;
+    justify-content: center;
+}
+.section .profile {
+    text-align: center;
+}
+.section .profile img {
+    display: block;
+    width: 100px;
+    height: 70px;
+    /* border-radius: 50%; */
+    margin: 0 auto;
+}
+.section .profile h3 {
+    color: #830d0d;
+    margin: 0px 0 5px;
+    font-size: 11px;
+    font-weight: 900;
+}
+.section .profile p {
+    color: rgb(131 12 11);
+    font-size: 10px;
+    font-weight: 900;
+}
+.wrapper .section .top_navbar .tnav a{
+    font-size: 28px;
+    color: #810d0c;
+}
+
+.wrapper .section .top_navbar .tnav a:hover{
+    color: #810d0c
+}
+.tnav {
+    display: none;      
+}
+@media (max-width: 990px) {
+    .tnav {
+        
+    }
+}
+@media (max-width: 992px) {
+    .top_nabvbar .tnav:hover, .sidebar {
+        
+    }
+}
+body.active .wrapper .sidebar{
+    left: -225px;
+}
+
+body.active .wrapper .section{
+    margin-left: 0;
+    width: 100%;
+}
+.navselect {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5em;
+    bottom: -13px;
+    padding: 0 38px;
+    position: relative;
+}
+@media (max-width: 762px) {
+    .navselect {
+        padding: 0;
+        margin: 0;
+        bottom: 0;
+        left: 0;
+    }
+}
+/* End logo  */
+.bu-banner{
+    display: none;
+}
+.bu-banner > .container {
+    max-width: 960px;
+}
+.bu-to-banner {
+    height: 348px;
+    width: 100%;
+    /* margin-right: 200px; */
+    position: relative;
+    background: url(../imegs/p.jpg) no-repeat;
+    background-size: 100%;
+    border-radius: 20px;
+}
+/* End Banner  */
+.switch {
+    
+    position: relative;
+    display: inline-block;
+    margin: 0 10px;
+    direction: rtl;
+}
+
+.switch > span {
+    position: absolute;
+    top: 11px;
+    pointer-events: none;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-shadow: 0 2px 0 rgba(0, 0, 0, .06);
+    width: 50%;
+    text-align: center;
+}
+  input.check-toggle-round-flat:checked ~ .off {
+      color: #7c0a08;
+    }
+  
+  input.check-toggle-round-flat:checked ~ .on {
+    color: #fff;
+  }
+  .switch > span.on {
+    left: 0;
+    padding-left: 5px;
+    color: #7c0a08;
+}
+
+.switch > span.off {
+    right: 0;
+    padding-right: 4px;
+    color: #fff;
+  }
+  
+  .check-toggle {
+      position: absolute;
+      margin-left: -9999px;
+      visibility: hidden;
+    }
+    .check-toggle + label {
+        display: block;
+        position: relative;
+        cursor: pointer;
+        outline: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    
+    input.check-toggle-round-flat + label {
+        padding: 2px;
+        width: 97px;
+        height: 35px;
+        background-color: #7c0a08;
+        border-radius: 7px;
+    }
+    input.check-toggle-round-flat + label:before, input.check-toggle-round-flat + label:after {
+    display: block;
+    position: absolute;
+    content: "";
+}
+
+input.check-toggle-round-flat + label:before {
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+    right: 2px;
+    background-color: #7c0a08;
+}
+  input.check-toggle-round-flat + label:after {
+      top: 4px;
+      left: 4px;
+      bottom: 4px;
+      width: 48px;
+      background-color: #fff;
+      -webkit-border-radius: 52px;
+      -moz-border-radius: 52px;
+      -ms-border-radius: 52px;
+    -o-border-radius: 52px;
+    border-radius: 52px;
+    -webkit-transition: margin 0.2s;
+    -moz-transition: margin 0.2s;
+    -o-transition: margin 0.2s;
+    transition: margin 0.2s;
+}
+
+input.check-toggle-round-flat:checked + label {
+}
+
+input.check-toggle-round-flat:checked + label:after {
+    margin-left: 44px;
+}
+/* End Button-lan */
+@media (max-width: 767px) {
+    .order {
+        display: none; 
+    }
+} 
+.place-order {
+    width: 134px;
+    height: 43px;
+    border-radius: 10px;
+    background-color: #7c0a08;
+    position: relative;
+    overflow: hidden;
+    border: none;
+    cursor: pointer;
+}
+.sign {
+    position: relative;
+    left: 10px;
+}
+.sign .place-order {
+    width: 101px;
+    height: 36px;
+    border-radius: 7px;
+    background-color: #7c0a08;
+}
+.sign .default-text {
+    color: #fff;
+    font-weight: bold;
+    font-size: 12px;
+    position: relative;
+    /* text-align: center; */
+    /* align-items: center; */
+}
+.order .default-text {
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    position: relative;
+    /* text-align: center; */
+    /* align-items: center; */
+}
+
+/* end  */
+.nav-menu {
+    padding: 0 48px;
+}
+.nav-menu .container {
+    background: #7c0a08;
+    border-radius: 20px;
+    margin-top: 30px;
+    padding: 12px 50px;
+    width: 100%;
+
+}
+.container .navbar .menu  {
+    display: flex;
+    justify-content: space-between;
+}
+.container .navbar .menu li > a {
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    line-height: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+@media (max-width: 902px) { 
+    .container .navbar .menu li > a {
+        font-size: 10px;
+    }
+}
+@media (max-width: 682px) { 
+    .nav-menu {
+        display: none;
+    }
+}
+.container .navbar .menu li > a i {
+    display: none;
+}
+/* Slideshow container */
+.buffet-slideshow {
+        top: 20px;
+        position: relative;
+        padding: 0 48px;
+}
+.buffet-slideshow .buffet-container {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+/* Hide the images by default */
+
+.buffet-slideshow .buffet-container .img-slidre {
+    height: 360px;
+    transition: all 0.15s ease;
+    background-size: cover;
+    background-position: 50%;
+    border-radius: 20px;
+    min-height: 220px;
+}
+/* Next & previous buttons */
+.buff-prev, .buff-next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 7px;
+    color: rgb(124 10 8 / 90%);
+    font-weight: bold;
+    font-size: 43px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 7px 0;
+    user-select: none;
+}
+/* Position the "next button" to the right */
+.buff-next {
+    left: 1%;
+    border-radius: 3px 0 0 3px
+}
+/* On hover, add a black background color with a little bit see-through */
+.buff-prev:hover, .buff-next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+/* The dots/bullets/indicators */
+.buff-dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .buff-dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .buff-dot, .buff-next,.buff-next {font-size: 11px}
+}  
+.buffet-card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 100%;
+    position: relative;
+    top: 26px;
+}
+.buffet-card .container {
+    width: auto;
+    padding: 0px 48px;
+}
+.buffet-card .container .cards {
+/* Creat Cards Said By Said  */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+.buffet-card .container .card {
+    flex: 0 1 33%;
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+}
+@media (max-width: 992px) {
+    .buffet-card .container .card {
+        flex: 1 1 35%;
+    }
+}
+@media (max-width: 767px) {
+    .buffet-card .container .card {
+        flex: 0 0 100%;
+    }
+}
+.buffet-card h1 {
+    font-size: 18px;
+    color: #fff;
+    letter-spacing: 0.5px;
+    background-color: #b0b3b5;
+    padding: 0.5em;
+    margin: 0px 0px;
+    border: 1px solid black;
+    border-bottom: none;
+}
+.buffet-card p {
+    border-left: 1px black solid;
+    border-right: 1px black solid;
+}
+.buffet-card button {
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: rgb(124 10 8 / 90%);
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    margin-top: 5px;
+    border-radius: 0;
+    border-style: none;
+    border-bottom: 1px black solid;
+}
+.card button:hover {
+    opacity: 0.7;
+}
+/* Img-Card */
+.bu_cdimg{
+    height: 200px;
+    background-position: 50%;
+    background-size: cover;
+}
+.buffet-f {
+    width: 100%;
+    position: relative;
+    background: linear-gradient(to right, #2d0b00, #7c0a08);
+    padding: 0px 0;
+    color: #fff;
+    font-size: 16px;
+    line-height: 15px;
+    bottom: -51px;
+    min-height: 164px;
+    border-radius: 0;
+}
+.buffet-f .row {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.buffet-f .col {
+    flex-basis: 35%;
+    padding: 0px;
+    text-align: center;
+    line-height: 23.4px;
+}
+.buffet-f .f-social {
+    flex-basis: 31%;
+    position: relative;
+    top: 25px;
+}
+/* End Section-buffets */
+
