@@ -1166,7 +1166,7 @@ input.check-toggle-round-flat:checked + label:after {
 .buffet-slideshow {
         top: 20px;
         position: relative;
-        padding: 0 48px;
+        padding: 0 6px;
 }
 .buffet-slideshow .buffet-container {
     width: 100%;
