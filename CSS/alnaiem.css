@@ -99,7 +99,7 @@ ul {
  /* End components */
 /* Start Header  */
 .head {
-    background: #ffedbb;
+    background: #b96b00b0;
 }
 .head .container {
     display: flex;
@@ -1339,4 +1339,36 @@ input.check-toggle-round-flat:checked + label:after {
     top: 25px;
 }
 /* End Section-buffets */
+/* Start AR-Dishes */
+.ar-container {
+    position: relative;
+    top: 50px;
+    padding: 0 48px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 0 48px;
+    gap: 11px;
+}
+@media (max-width: 992px) {
+    .ar-container {
+        grid-template-columns: auto auto;
+    }
+}  
+@media (max-width: 767px) {
+    .ar-container {
+        grid-template-columns: auto;
+    }
+}  
+.ar-container .ar-card {
+    background-color: #fff;
+}
+.ar-container .ar-card .ar-img {
+    height: 265px;
+    background-size: cover;
+}
+.ar-container .ar-card .ar-text {
+    text-align: center;
+    color: #7c0a08;
+}
+/* End AR-Dishes */
 
