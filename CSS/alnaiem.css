@@ -112,7 +112,8 @@ ul {
 }
 @media (max-width: 767px) {   
     .head .container {
-        justify-content: center;
+        justify-content: space-between;
+        flex-wrap: nowrap;
     }
 }    
 .head .container .logo .logo-link {
@@ -128,6 +129,7 @@ ul {
     .head .container .logo .logo-link {
         max-height: 87px;
         max-width: 129px;
+        background-size: 88%;
     }
 }    
 .head .container .social .so {
@@ -143,20 +145,25 @@ ul {
 }
 @media (max-width: 767px) {   
     .head .container .social .so {
-       margin: 4px;
+       margin: 0;
     }
 }   
 @media (max-width: 767px) {   
     .head .container .social .so a {
         right: 0;
         top: 0;
-        font-size: x-large;
+        font-size: 15px;
     }
 }   
 .head .container .social i {
     padding: 0 20px;
     display: table-cell;
 }
+@media (max-width: 767px) {   
+    .head .container .social i {
+       padding: 0px 12px;
+    }
+}   
 .nav {
     background: #B96B00; 
     -webkit-box-shadow: 0 0 10px #ddd;
@@ -377,6 +384,11 @@ Section {
     padding: 60px 0;
     background: #b96b00;
 }
+@media (max-width: 767px) {
+    Section  {
+        padding: 15px 0;
+    }
+}
 .services {
     position: relative;
     top: 11px;
@@ -403,6 +415,7 @@ Section {
     .services > .container  {
         display: flex;
         flex-wrap: wrap;
+        font-size: 8px;
     }
 }
 
@@ -426,11 +439,20 @@ Section {
     font-size: 19px;
     line-height: 29px;
 }
+@media (max-width: 767px){
+    .color-offwhite  {
+        font-size: 11px;
+    }
+}
 .services .cl-md-4 .last {
     margin-top: 63px;
     color: #fff;
     font-weight: bold;
     text-decoration: none;
+}
+@media (max-width: 767px){
+    .services .cl-md-4 .last  {
+        margin-top: 30px;    }
 }
 .last .b-l {
     color: #fff;
@@ -454,6 +476,7 @@ Section {
 @media (max-width: 992px) {
     .text-gol {
         margin: 0;
+        font-size: 11px;
     }
 }
 .text-gol h1, .map {
@@ -466,9 +489,16 @@ Section {
     font-size: larger;
 }
 .gole .container .img-gol img {
-    width: 300Spx;
     height: 250px;
-    margin-right: 20px;
+    margin-right: 19px;
+    width: 240px;
+}
+@media (max-width: 767px) {
+    .gole .container .img-gol img{
+        height: 150px;
+        width: 150px;
+        margin-right: 0;
+    }
 }
 @media (max-width: 767px) {
     .gole .container, .map {
@@ -568,7 +598,7 @@ font-size: 16px;
     text-align: center;
     line-height: 25px;
     font-size: 16px;
-    color: #0a0c26;
+    color: #520a04;
     background: #fff;
     margin-right: 17px;
     margin-top: 20px;
@@ -582,6 +612,12 @@ hr {
 .last {
     text-align: center;
     letter-spacing: 2px;
+}
+@media (max-width: 767px) {
+    .last  {
+        bottom: 9px;
+        position: relative;
+    }
 }
 .underline {
     width: 100%;
@@ -1083,39 +1119,51 @@ input.check-toggle-round-flat:checked + label:after {
     color: #fff;
     font-size: 16px;
     line-height: 15px;
-    bottom: -51px;
     min-height: 190px;
     border-radius: 0;
 }
-.buffet-f .row {
-    width: 100%;
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-between;
+@media (max-width: 768px) {
+    .buffet-f  {
+        font-size: 10px;
+    }
 }
-@media (min-width: 768px) {
+.buffet-f .row {
+    width: 100%; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+}
+@media (max-width: 768px) {
     .buffet-f .row {
         display: block;
     }
 }
 .buffet-f .col {
-    flex-basis: 35%;
     padding: 0px;
-    text-align: center;
-    line-height: 23.4px;
+    width: 100%;
+}
+.buffet-f .col ul {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    margin: 18px;
+    top: 15px;
+}
+@media (max-width: 768px) {
+    .buffet-f .col ul {
+        display: grid;
+        grid-template-columns: auto auto;
+        padding: 0px;
+        justify-content: space-between;
+    }
 }
 .buffet-f .f-social {
-    flex-basis: 31%;
-    position: relative;
-    top: 25px;
+    
 }
 @media (min-width: 768px) {
     .buffet-f .f-social {
-        top: 0;
-        justify-content: center;
-        display: flex;
+        
     }
 }
 
