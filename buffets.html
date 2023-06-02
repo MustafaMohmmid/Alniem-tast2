@@ -16,106 +16,142 @@
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;400;700;800&display=swap" rel="stylesheet">
 </head>
 <body style="background: #ffedbb;">
-    <div class="wrapper">
-        <div class="section">
-            <div class="top_navbar">
-                 <!-- Profile image & text -->
+<div class="wrapper">
+    <div class="section">
+        <div class="top_navbar">
+            <!-- Profile image & text -->
             <div class="profile">
                 <a href="index.html" class="lobar">
-                  <img src="imegs/non-background/logo.png" alt="">
+                    <img src="imegs/non-background/logo.png" alt="">
                 </a>
                 <h3>مطابخ ومطاعم النعيم</h3>
                 <p>للحفلات والمناسبات</p>
             </div>
-            </div>
-        </div>
-        <!-- Select Nav   -->
-        <div class="navselect">
-            <div class="switch">
-                <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox">
-                <label for="language-toggle"></label>
-                <span class="on">العربية</span>
-                <span class="off" >En</span>
-            </div>
-            <p class="line">&nbsp;</p>
-            <a href="#" class="sign">
-                <button class="place-order place-order--default">
-                    <div class="default-text">تسجيل الدخول</div>
-                </button>
-            <a href="https://wa.me/c/966503612583"
-                target="_blank" class="order">
-                <button class="place-order place-order--default">
-                    <div class="default-text">أحجز الأن</div>
-                </button>
-            </a>
-        </div>
-    </div> 
-    <!-- Start Banner  -->
-    <div class="bu-banner">
-        <div class="container">
-            <div class="bu-to-banner">
-                <!-- Next & previous buttons  -->
-                <a class="prev" onclick="plusSlides(-1)">❮</a>
-                <a class="next" onclick="plusSlides(1)">❯</a>
-            </div> 
         </div>
     </div>
+    <!-- Select Nav   -->
+    <div class="navselect">
+        <div class="switch">
+            <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox">
+            <label for="language-toggle"></label>
+            <span class="on">العربية</span>
+            <span class="off" >En</span>
+        </div>
+        <p class="line">&nbsp;</p>
+        <a href="#" class="sign">
+            <button class="place-order place-order--default">
+                <div class="default-text">تسجيل الدخول</div>
+            </button>
+        <a href="https://wa.me/c/966503612583"
+            target="_blank" class="order">
+            <button class="place-order place-order--default">
+                <div class="default-text">أحجز الأن</div>
+            </button>
+        </a>
+    </div>
+</div> 
+<!-- Start Banner  -->
+<div class="bu-banner">
+    <div class="container">
+        <div class="bu-to-banner">
+            <!-- Next & previous buttons  -->
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+        </div> 
+    </div>
+</div>
 </div> 
 <nav class="nav-menu">
     <div class="ar-container">
         <div class="navbar">
-            <!-- Menu Icon  -->
-            <i class="fas fa-bars tog-menu"></i>
-            <!-- Menu item  -->
-            <ul class="menu">
-                <li>
+                <!-- Menu Icon & Search & Side-menu  -->
+                <div id="mySidemenu" class="sidemenu">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                    <a href="index.html" class="hom"
+                    style="position: absolute; top: 20px; padding: 5px;">
+                        <span>
+                            <i class="fa-solid fa-house"></i>
+                        </span>
+                        <span>الصفحة الرئيسية</span>
+                    </a>
                     <a href="ar-dishes.html">
-                        <span class="icon"><i class="fas fa-home"></i></span>
-                        <span class="ar-active">الأطباق العربية المميزة للذبائح</span>
+                        <span>
+                            <i class="fa-solid fa-plate-wheat"></i>
+                        </span>
+                        <span>الأطباق العربية</span>
                     </a>
-                </li>
-                <li>
-                    <a href="buffets.html">
-                        <span class="icon"><i class="fas fa-desktop"></i></span>
-                        <span class="item">قسم البوفيهات</span>
+                    <a href="buffets.html" class="active">
+                        <span>
+                            <i class="fa-solid fa-cake-candles"></i>
+                        </span>
+                        <span>قسم البوفيهات</span>
                     </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <span class="icon"><i class="fas fa-cog"></i></span>
-                        <span class="item">منيو الافطار</span>
+                    <a href="about-us.html">
+                        <span>
+                            <i class="fa-solid fa-clipboard"></i>
+                        </span>
+                        <span>قصتنا</span>
                     </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <span class="icon"><i class="fas fa-tachometer-alt"></i></span>
-                        <span class="item">ذبائح النعيم</span>
+                    <a href="contact-us.html">
+                        <span>
+                            <i class="fa-solid fa-comments"></i>                        </span>
+                        <span>تواصل معنا</span>
                     </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <span class="icon"><i class="fas fa-database"></i></span>
-                        <span class="item">قصتنا</span>
+                    <a href="contact-us.html">
+                        <span>
+                            <i class="fa-solid fa-right-to-bracket"></i>                        </span>
+                        <span>تسجيل الدخول</span>
                     </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <span class="icon"><i class="fas fa-chart-line"></i></span>
-                        <span class="item">فروعنا</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <span class="icon"><i class="fas fa-user-shield"></i></span>
-                        <span class="item">تواصل معنا</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
+                </div>
+                <div class="me-sr">
+                    <i class="fa-solid fa-truck-fast"></i>
+                    <input class="search" type="text" placeholder="اتصل بنا 050605022">                    <button class="openbtn" onclick="openNav()">
+                        <i class="fas fa-bars tog-menu"></i>
+                    </button>
+                </div>
+                <!-- Menu item  -->
+                <ul class="menu">
+                    <li>
+                        <a href="ar-dishes.html">
+                            <span class="ar-active">الأطباق العربية المميزة للذبائح</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="buffets.html">
+                            <span class="item">قسم البوفيهات</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="item">منيو الافطار</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="item">ذبائح النعيم</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about-us.html">
+                            <span class="item">قصتنا</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contact-us.html">
+                            <span class="item">فروعنا</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contact-us.html">
+                            <span class="item">تواصل معنا</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
     </div>
 </nav>
 <!--End Nav-menu  -->
-<div class="buffet-slideshow">
+<div class="buffet-slide">
     <div class="buffet-container">
         <div class="mySlides fade">
             <div class="img-slidre" style="background-image: url(imegs/img-buffit/DSC_9824.jpg); width: 100%;"></div>
@@ -138,106 +174,123 @@
     </div>
 </div>    
     <!-- End Buffet-Slideshow -->
-    <!-- Start Buffet-Card -->
+<!-- Start Buffet-Card -->
     <!-- Script (Js) SliderShow   -->
-    <script>
-        let slideIndex = 1;
-        showSlides(slideIndex);
-        
-        function plusSlides(n) {
-          showSlides(slideIndex += n);
-        }
-        
-        function currentSlide(n) {
-          showSlides(slideIndex = n);
-        }
-        
-        function showSlides(n) {
-          let i;
-          let slides = document.getElementsByClassName("mySlides");
-          let dots = document.getElementsByClassName("dot");
-          if (n > slides.length) {slideIndex = 1}    
-          if (n < 1) {slideIndex = slides.length}
-          for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";  
-          }
-          for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-          }
-          slides[slideIndex-1].style.display = "block";  
-          dots[slideIndex-1].className += " active";
-        }
-        </script>     
- <div class="buffet-card">
-        <div class="container">
-            <div class="cards">
-                <div class="card">
-                <div class="bu_cdimg" style="background-image: url(imegs/img-buffit/DSC_0429.jpg); width: 100%;"></div>
-                    <a href="#"><h1>البوفية الفضي</h1></a>
+    <div class="buffet-card">
+    <div class="container">
+        <div class="cards">     
+            <div class="card">
+            <div class="bu_cdimg" style="background-image: url(imegs/img-buffit/DSC_0429.jpg); width: 100%;"></div>
+                <a href="https://wa.me/c/966503612583" target="_blank">
+                <h1>البوفية الفضي</h1></a>
+                <!-- <p class="price">$19.99</p> -->
+                <p>تشكيلة متنوع تحتوي على العديد من الأطباق الشهية والاكثر طلباً</p>
+                <a href="https://wa.me/c/966503612583" target="_blank"><button>احجز الان</button></a>
+            </div>
+            <div class="card">
+                <div class="bu_cdimg" style="background-image: url(imegs/img-buffit/DSC_9858.jpg); width: 100%;"></div>
+                    <a href="https://wa.me/c/966503612583" target="_blank">
+                    <h1 style="background-color: #b69859;">البوفية الذهبي</h1></a>
                     <!-- <p class="price">$19.99</p> -->
                     <p>تشكيلة متنوع تحتوي على العديد من الأطباق الشهية والاكثر طلباً</p>
-                    <p><button>احجز الان</button></p>
+                    <a href="https://wa.me/c/966503612583" target="_blank"><button>احجز الان</button></a>
                 </div>
-                <div class="card">
-                    <div class="bu_cdimg" style="background-image: url(imegs/img-buffit/DSC_9858.jpg); width: 100%;"></div>
-                        <a href="#"><h1 style="background-color: #b69859;">البوفية الذهبي</h1></a>
-                        <!-- <p class="price">$19.99</p> -->
-                        <p>تشكيلة متنوع تحتوي على العديد من الأطباق الشهية والاكثر طلباً</p>
-                        <p><button>احجز الان</button></p>
-                    </div>
-                <div class="card">
-                    <div class="bu_cdimg" style="background-image: url(imegs/img-buffit/DSC_0445.jpg); background-size: 195%;
-                    background-position-x: right; background-position-y: top; width: 100%;"></div>
-                        <a href="#"><h1 style="background-color: #e6e7e8;">البوفية الماسي</h1></a>
-                        <!-- <p class="price">$19.99</p> -->
-                        <p>تشكيلة متنوع تحتوي على العديد من الأطباق الشهية والاكثر طلباً</p>
-                        <p><button>احجز الان</button></p>
-                    </div>
-                <div class="card">
-                    <div class="bu_cdimg" style="background-image: url(imegs/img-buffit/DSC_9835.jpg); width: 100%;"></div>
-                        <a href="#"><h1 style="background-color: #551911;">البوفية المميزة</h1></a>
-                        <!-- <p class="price">$19.99</p> -->
-                        <p>تشكيلة متنوع تحتوي على العديد من الأطباق الشهية والاكثر طلباً</p>
-                        <p><button>احجز الان</button></p>
-                    </div>
-                <div class="card">
-                    <div class="bu_cdimg" style="background-image: url(imegs/img-buffit/DSC_0429.jpg); width: 100%;"></div>
-                        <a href="#"><h1 style="background-color: #4fa3da;">الركن البحري</h1></a>
-                        <!-- <p class="price">$19.99</p> -->
-                        <p>تشكيلة متنوع تحتوي على العديد من الأطباق الشهية والاكثر طلباً</p>
-                        <p><button>احجز الان</button></p>
-                    </div>
-                <div class="card">
-                    <div class="bu_cdimg" style="background-image: url(imegs/img-buffit/DSC_9870.jpg); width: 100%;"></div>
-                        <a href="#"><h1 style="background-color: #fdcb9b;">بوفية الحلويات</h1></a>
-                        <!-- <p class="price">$19.99</p> -->
-                        <p>تشكيلة متنوع تحتوي على العديد من الأطباق الشهية والاكثر طلباً</p>
-                        <p><button>احجز الان</button></p>
-                    </div>
+            <div class="card">
+                <div class="bu_cdimg" style="background-image: url(imegs/img-buffit/DSC_0445.jpg); background-size: 195%;
+                background-position-x: right; background-position-y: top; width: 100%;"></div>
+                    <a href="https://wa.me/c/966503612583" target="_blank">
+                    <h1 style="background-color: #e6e7e8;">البوفية الماسي</h1></a>
+                    <!-- <p class="price">$19.99</p> -->
+                    <p>تشكيلة متنوع تحتوي على العديد من الأطباق الشهية والاكثر طلباً</p>
+                    <a href="https://wa.me/c/966503612583" target="_blank"><button>احجز الان</button></a>
+                </div>
+            <div class="card">
+                <div class="bu_cdimg" style="background-image: url(imegs/img-buffit/DSC_9835.jpg); width: 100%;"></div>
+                    <a href="https://wa.me/c/966503612583" target="_blank">
+                    <h1 style="background-color: #551911;">البوفية المميزة</h1></a>
+                    <!-- <p class="price">$19.99</p> -->
+                    <p>تشكيلة متنوع تحتوي على العديد من الأطباق الشهية والاكثر طلباً</p>
+                    <a href="https://wa.me/c/966503612583" target="_blank"><button>احجز الان</button></a>
+                </div>
+            <div class="card">
+                <div class="bu_cdimg" style="background-image: url(imegs/img-buffit/DSC_0429.jpg); width: 100%;"></div>
+                    <a href="https://wa.me/c/966503612583" target="_blank">
+                    <h1 style="background-color: #4fa3da;">الركن البحري</h1></a>
+                    <!-- <p class="price">$19.99</p> -->
+                    <p>تشكيلة متنوع تحتوي على العديد من الأطباق الشهية والاكثر طلباً</p>
+                    <a href="https://wa.me/c/966503612583" target="_blank"><button>احجز الان</button></a>
+                </div>
+            <div class="card">
+                <div class="bu_cdimg" style="background-image: url(imegs/img-buffit/DSC_9870.jpg); width: 100%;"></div>
+                    <a href="https://wa.me/c/966503612583" target="_blank">
+                    <h1 style="background-color: #fdcb9b;">بوفية الحلويات</h1></a>
+                    <!-- <p class="price">$19.99</p> -->
+                    <p>تشكيلة متنوع تحتوي على العديد من الأطباق الشهية والاكثر طلباً</p>
+                    <a href="https://wa.me/c/966503612583" target="_blank"><button>احجز الان</button></a>
                 </div>
             </div>
         </div>
- </div>  
- <footer class="buffet-f">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <!-- <a href="#" class="logo">النعيم</a> -->
-                     <img src="../Leon _ Template One_files/logo.png" alt="" class="logo">
-                    <p>يسعدنا تواصلكم معنا على الرقم الموحد</p>
-                    <h4>920022633</h4>
-                </div>
-                <div class="f-social">
-                    <a href="href=//www.instagram.com/alnaiem.sa/" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="href=//twitter.com/alnaiemsa?lang=ar" target="_blank"><i class="fab fa-twitter"></i></a>
-                    <a href="href=//www.facebook.com/alnaiem.sa/"  target="_blank"><i class="fab fa-facebook"></i></a>
-                    <a href=""><i class="fab fa-whatsapp"></i></a>
-                    </div>
-                </div>
+    </div>
+</div>  
+<footer class="buffet-f" style="bottom: -33px;">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <!-- <a href="#" class="logo">النعيم</a> -->
+                <ul>
+                    <li> من نحن</li>
+                    <li>سياسة الخصوصية</li>
+                    <li>الاحكام والشروط</li>
+                    <li>الاسئلة الشائعة</li>
+                    <li>اتصل بنا</li>
+                </ul>
             </div>
-            <hr>
-            <p class="last">مطابخ ومطاعم النعيم للحفلات والمناسبات. 2023 ©</p>
+            <div class="f-social">
+                <a href="href=//www.instagram.com/alnaiem.sa/" target="_blank" ><i class="fab fa-instagram"style="color: #790a07;"></i></a>
+                <a href="href=//twitter.com/alnaiemsa?lang=ar" target="_blank" ><i class="fab fa-twitter"style="color: #790a07;"></i></a>
+                <a href="href=//www.facebook.com/alnaiem.sa/"  target="_blank" ><i class="fab fa-facebook"style="color: #790a07;"></i></a>
+                <a href="https://wa.me/c/966503612583"><i class="fab fa-whatsapp"></i></a>
+            </div>
         </div>
-    </footer>
+        <hr>
+        <p class="last">مطابخ ومطاعم النعيم للحفلات والمناسبات. 2023 ©</p>
+    </div>
+</footer>
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }    
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length){
+            slideIndex = 1
+        }    
+        if (n < 1) {
+            slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+    }
+// SliderMenu
+function openNav() {
+    document.getElementById("mySidemenu").style.width = "250px";
+}
+function closeNav() {
+    document.getElementById("mySidemenu").style.width = "0";
+}
+</script>
 </body>
 </html>

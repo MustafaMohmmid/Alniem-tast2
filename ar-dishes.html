@@ -19,10 +19,10 @@
     <div class="wrapper">
         <div class="section">
             <div class="top_navbar">
-                 <!-- Profile image & text -->
+                <!-- Profile image & text -->
             <div class="profile">
                 <a href="index.html" class="lobar">
-                  <img src="imegs/non-background/logo.png" alt="">
+                <img src="imegs/non-background/logo.png" alt="">
                 </a>
                 <h3>مطابخ ومطاعم النعيم</h3>
                 <p>للحفلات والمناسبات</p>
@@ -53,49 +53,86 @@
     <nav class="nav-menu">
         <div class="ar-container">
             <div class="navbar">
-                <!-- Menu Icon  -->
-                <i class="fas fa-bars tog-menu"></i>
+                <!-- Menu Icon & Search & Side-menu  -->
+                <div id="mySidemenu" class="sidemenu">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                    <a href="index.html" class="hom"
+                    style="position: absolute; top: 20px; padding: 5px;">
+                        <span>
+                            <i class="fa-solid fa-house"></i>
+                        </span>
+                        <span>الصفحة الرئيسية</span>
+                    </a>
+                    <a href="ar-dishes.html" class="active">
+                        <span>
+                            <i class="fa-solid fa-plate-wheat"></i>
+                        </span>
+                        <span>الأطباق العربية</span>
+                    </a>
+                    <a href="buffets.html">
+                        <span>
+                            <i class="fa-solid fa-cake-candles"></i>
+                        </span>
+                        <span>قسم البوفيهات</span>
+                    </a>
+                    <a href="about-us.html">
+                        <span>
+                            <i class="fa-solid fa-clipboard"></i>
+                        </span>
+                        <span>قصتنا</span>
+                    </a>
+                    <a href="contact-us.html">
+                        <span>
+                            <i class="fa-solid fa-comments"></i>                        </span>
+                        <span>تواصل معنا</span>
+                    </a>
+                    <a href="contact-us.html">
+                        <span>
+                            <i class="fa-solid fa-right-to-bracket"></i>                        </span>
+                        <span>تسجيل الدخول</span>
+                    </a>
+                </div>
+                <div class="me-sr">
+                    <i class="fa-solid fa-truck-fast"></i>
+                    <input class="search" type="text" placeholder="اتصل بنا 050605022">
+                    <button class="openbtn" onclick="openNav()">
+                        <i class="fas fa-bars tog-menu"></i>
+                    </button>
+                </div>
                 <!-- Menu item  -->
                 <ul class="menu">
                     <li>
                         <a href="ar-dishes.html">
-                            <span class="icon"><i class="fas fa-home"></i></span>
                             <span class="ar-active">الأطباق العربية المميزة للذبائح</span>
                         </a>
                     </li>
                     <li>
                         <a href="buffets.html">
-                            <span class="icon"><i class="fas fa-desktop"></i></span>
                             <span class="item">قسم البوفيهات</span>
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <span class="icon"><i class="fas fa-cog"></i></span>
                             <span class="item">منيو الافطار</span>
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <span class="icon"><i class="fas fa-tachometer-alt"></i></span>
                             <span class="item">ذبائح النعيم</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
-                            <span class="icon"><i class="fas fa-database"></i></span>
+                        <a href="about-us.html">
                             <span class="item">قصتنا</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
-                            <span class="icon"><i class="fas fa-chart-line"></i></span>
+                        <a href="contact-us.html">
                             <span class="item">فروعنا</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
-                            <span class="icon"><i class="fas fa-user-shield"></i></span>
+                        <a href="contact-us.html">
                             <span class="item">تواصل معنا</span>
                         </a>
                     </li>
@@ -110,7 +147,7 @@
                 <div class="ar-img" style="background-image: url(imegs/deshes/1989313069408605985_n.jpg); width: 100%;">
                 </div>
                 <div class="ar-text" style="height: fit-content;position: relative;">
-                    <h3>ندي مفطح</h3>
+                    <h3>مندي مفطح</h3>
                     <p>سعر الطبخ شامل الظريبة</p>
                     <p>365 Rs</p>
                 </div>
@@ -139,7 +176,7 @@
                 <div class="ar-text" style="height: fit-content;position: relative;">
                     <h3>مندي شقر</h3>
                     <p>سعر الطبخ شامل الظريبة</p>
-                       <p>365 Rs</p>
+                    <p>365 Rs</p>
                 </div>
             </div>
             <div class="ar-card"> 
@@ -189,26 +226,37 @@
             </div>    
         </div>
     </div>
-    <footer class="buffet-f">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <!-- <a href="#" class="logo">النعيم</a> -->
-                     <img src="../Leon _ Template One_files/logo.png" alt="" class="logo">
-                    <p>يسعدنا تواصلكم معنا على الرقم الموحد</p>
-                    <h4>920022633</h4>
-                </div>
-                <div class="f-social">
-                    <a href="href=//www.instagram.com/alnaiem.sa/" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="href=//twitter.com/alnaiemsa?lang=ar" target="_blank"><i class="fab fa-twitter"></i></a>
-                    <a href="href=//www.facebook.com/alnaiem.sa/"  target="_blank"><i class="fab fa-facebook"></i></a>
-                    <a href=""><i class="fab fa-whatsapp"></i></a>
-                    </div>
-                </div>
+<footer class="buffet-f" style="bottom: -60px;">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <!-- <a href="#" class="logo">النعيم</a> -->
+                <ul>
+                    <li> من نحن</li>
+                    <li>سياسة الخصوصية</li>
+                    <li>الاحكام والشروط</li>
+                    <li>الاسئلة الشائعة</li>
+                    <li>اتصل بنا</li>
+                </ul>
             </div>
-            <hr>
-            <p class="last">مطابخ ومطاعم النعيم للحفلات والمناسبات. 2023 ©</p>
+            <div class="f-social">
+                <a href="href=//www.instagram.com/alnaiem.sa/" target="_blank" ><i class="fab fa-instagram"style="color: #790a07;"></i></a>
+                <a href="href=//twitter.com/alnaiemsa?lang=ar" target="_blank" ><i class="fab fa-twitter"style="color: #790a07;"></i></a>
+                <a href="href=//www.facebook.com/alnaiem.sa/"  target="_blank" ><i class="fab fa-facebook"style="color: #790a07;"></i></a>
+                <a href="https://wa.me/c/96650605022"><i class="fab fa-whatsapp"></i></a>
+            </div>
         </div>
-    </footer>         
+        <hr>
+        <p class="last">مطابخ ومطاعم النعيم للحفلات والمناسبات. 2023 ©</p>
+    </div>
+</footer>   
+<script>
+function openNav() {
+    document.getElementById("mySidemenu").style.width = "250px";
+}
+function closeNav() {
+    document.getElementById("mySidemenu").style.width = "0";
+}
+</script>      
 </body>
 </html>
